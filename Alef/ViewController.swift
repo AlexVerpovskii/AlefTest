@@ -22,6 +22,7 @@ final class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ageTF.keyboardType = .numberPad
         tableDirector = TableDirector(tableView: tableView)
         tableDirector?.tableView?.separatorStyle = .none
     }
@@ -64,10 +65,10 @@ extension ViewController {
         alert.addTextField { text in
             text.placeholder = "Имя"
         }
-        alert
-            .addTextField { text in
+        alert.addTextField { text in
             text.placeholder = "Возраст"
-        }
+            text.keyboardType = .numberPad
+            }
         
         let save = UIAlertAction(title: "+", style: .default) {[weak self] action in
             let name = alert.textFields![0].text
