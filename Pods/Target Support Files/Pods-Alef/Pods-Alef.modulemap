@@ -1,0 +1,6 @@
+framework module Pods_Alef {
+  umbrella header "Pods-Alef-umbrella.h"
+
+  export *
+  module * { export * }
+}

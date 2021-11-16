@@ -1,0 +1,16 @@
+PODS:
+  - TableKit (2.11.0)
+
+DEPENDENCIES:
+  - TableKit
+
+SPEC REPOS:
+  trunk:
+    - TableKit
+
+SPEC CHECKSUMS:
+  TableKit: 8a1a267d841a2da638ea09bdb0db33aedb459fa8
+
+PODFILE CHECKSUM: 22a6a636b703c05676b6360813d1b6c2c8df95ac
+
+COCOAPODS: 1.11.2

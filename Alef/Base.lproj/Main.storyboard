@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alef" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kFY-Jk-Vp8">
+                                <rect key="frame" x="16" y="44" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ph7-0Q-4j8">
+                                <rect key="frame" x="16" y="106" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Отчество" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JoN-jY-Afm">
+                                <rect key="frame" x="16" y="168" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Rrn-Rd-97n">
+                                <rect key="frame" x="0.0" y="330" width="375" height="297"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJK-TO-zn7">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eVm-1z-YKp"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Очистить">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5WJ-Tm-Ezx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1e-k2-8nA">
+                                <rect key="frame" x="0.0" y="292" width="375" height="38"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Добавить ребенка">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addChildActionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGm-R6-2Jl"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Количество лет" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojq-Ld-RBo">
+                                <rect key="frame" x="16" y="230" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="ojq-Ld-RBo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0e5-It-j06"/>
+                            <constraint firstItem="kFY-Jk-Vp8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="1ie-Mo-ECX"/>
+                            <constraint firstItem="Ph7-0Q-4j8" firstAttribute="top" secondItem="kFY-Jk-Vp8" secondAttribute="bottom" constant="28" id="5tn-Jr-QsM"/>
+                            <constraint firstItem="aJK-TO-zn7" firstAttribute="top" secondItem="Rrn-Rd-97n" secondAttribute="bottom" id="7lP-rX-O73"/>
+                            <constraint firstItem="kFY-Jk-Vp8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="8ga-B4-qrk"/>
+                            <constraint firstItem="aJK-TO-zn7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Cq5-4B-C8H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFY-Jk-Vp8" secondAttribute="trailing" constant="16" id="FRJ-a4-bUT"/>
+                            <constraint firstItem="aJK-TO-zn7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="HZt-as-pZy"/>
+                            <constraint firstItem="Rrn-Rd-97n" firstAttribute="top" secondItem="I1e-k2-8nA" secondAttribute="bottom" id="TsM-MN-jaf"/>
+                            <constraint firstItem="Ph7-0Q-4j8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="V07-dD-G1m"/>
+                            <constraint firstItem="JoN-jY-Afm" firstAttribute="top" secondItem="Ph7-0Q-4j8" secondAttribute="bottom" constant="28" id="cGi-X4-TA2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I1e-k2-8nA" secondAttribute="trailing" id="g9P-lv-T3Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ojq-Ld-RBo" secondAttribute="trailing" constant="16" id="iQb-5B-Axu"/>
+                            <constraint firstItem="JoN-jY-Afm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jch-qj-7Y5"/>
+                            <constraint firstItem="Rrn-Rd-97n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ly7-iB-WPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ph7-0Q-4j8" secondAttribute="trailing" constant="16" id="r7m-hQ-2cl"/>
+                            <constraint firstItem="ojq-Ld-RBo" firstAttribute="top" secondItem="JoN-jY-Afm" secondAttribute="bottom" constant="28" id="shB-DF-67Y"/>
+                            <constraint firstItem="I1e-k2-8nA" firstAttribute="top" secondItem="ojq-Ld-RBo" secondAttribute="bottom" constant="28" id="uVi-k7-4mF"/>
+                            <constraint firstItem="I1e-k2-8nA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vSZ-Xc-Mn8"/>
+                            <constraint firstItem="Rrn-Rd-97n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wBr-so-M0F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JoN-jY-Afm" secondAttribute="trailing" constant="16" id="wyF-Uq-uLl"/>
+                            <constraint firstItem="aJK-TO-zn7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="y5z-Kf-Qek"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addChildButton" destination="I1e-k2-8nA" id="m4u-Ps-4kT"/>
+                        <outlet property="ageTF" destination="ojq-Ld-RBo" id="1Ku-5z-xst"/>
+                        <outlet property="clearButton" destination="aJK-TO-zn7" id="G3j-bw-4gK"/>
+                        <outlet property="firstNameTF" destination="Ph7-0Q-4j8" id="jfQ-S7-lEI"/>
+                        <outlet property="lastNameTF" destination="kFY-Jk-Vp8" id="HL6-dE-IGu"/>
+                        <outlet property="midleNameTF" destination="JoN-jY-Afm" id="4a2-Gp-ebU"/>
+                        <outlet property="tableView" destination="Rrn-Rd-97n" id="zKy-hR-s8F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="67.916041979010501"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
